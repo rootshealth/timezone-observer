@@ -1,4 +1,4 @@
-# Timezone change observer.
+# Timezone change observer
 
 ## About
 A flutter plugin to observe timezone changes for Android and IOS.
