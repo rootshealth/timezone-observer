@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:time_change_observer_example/main.dart';
+import 'package:timezone_change_observer_example/main.dart';
 
 void main() {
   testWidgets('Verify LocalTimezone', (WidgetTester tester) async {

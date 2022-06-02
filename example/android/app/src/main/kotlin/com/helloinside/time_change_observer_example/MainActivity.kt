@@ -1,4 +1,4 @@
-package com.helloinside.time_change_observer_example
+package com.helloinside.timezone_change_observer_example
 
 import io.flutter.embedding.android.FlutterActivity
 

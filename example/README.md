@@ -1,6 +1,6 @@
-# time_change_observer_example
+# timezone_change_observer_example
 
-Demonstrates how to use the time_change_observer plugin.
+Demonstrates how to use the timezone_change_observer plugin.
 
 ## Getting Started
 

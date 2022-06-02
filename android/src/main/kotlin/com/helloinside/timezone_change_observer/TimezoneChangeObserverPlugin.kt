@@ -1,4 +1,4 @@
-package com.helloinside.time_change_observer
+package com.helloinside.timezone_change_observer
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -9,20 +9,18 @@ import androidx.annotation.NonNull
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.EventChannel
 
-class TimeChangeObserverPlugin : BroadcastReceiver(), EventChannel.StreamHandler, FlutterPlugin {
+class TimezoneChangeObserverPlugin : BroadcastReceiver(), EventChannel.StreamHandler, FlutterPlugin {
 
     var _context: Context? = null
     var _sink: EventChannel.EventSink? = null
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         _context = flutterPluginBinding.applicationContext
-        val eventChannel = EventChannel(flutterPluginBinding.binaryMessenger, "time_change_observer")
+        val eventChannel = EventChannel(flutterPluginBinding.binaryMessenger, "timezone_change_observer")
         eventChannel.setStreamHandler(this)
 
         val intentFilter = IntentFilter()
-        intentFilter.addAction("android.intent.action.TIME_SET")
         intentFilter.addAction("android.intent.action.TIMEZONE_CHANGED")
-        intentFilter.addAction("android.intent.action.DATE_CHANGED")
 
         ContextWrapper(_context).registerReceiver(this, intentFilter)
     }

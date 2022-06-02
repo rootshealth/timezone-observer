@@ -1,4 +1,4 @@
-group 'com.helloinside.time_change_observer'
+group 'com.helloinside.timezone_change_observer'
 version '1.0-SNAPSHOT'
 
 buildscript {

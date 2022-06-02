@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
-import 'package:time_change_observer/time_change_observer.dart';
+import 'package:timezone_change_observer/timezone_change_observer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: StreamBuilder<Object>(
-              stream: TimeChangeObserver.init,
+              stream: TimezoneChangeObserver.init,
               builder: (context, snapshot) {
                 return FutureBuilder(
                     future: FlutterNativeTimezone.getLocalTimezone(),

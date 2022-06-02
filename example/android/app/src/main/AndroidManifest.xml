@@ -1,18 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.helloinside.time_change_observer_example">
+    package="com.helloinside.timezone_change_observer_example">
 
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:label="time_change_observer_example">
+        android:label="timezone_change_observer_example">
 
         <receiver
-            android:name="com.helloinside.time_change_observer.TimeChangeObserverPlugin"
+            android:name="com.helloinside.timezone_change_observer.TimezoneChangeObserverPlugin"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.TIME_SET" />
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-                <action android:name="android.intent.action.DATE_CHANGED" />
             </intent-filter>
         </receiver>
 

@@ -1,4 +1,4 @@
-name: time_change_observer
+name: timezone_change_observer
 description: A new Flutter project.
 version: 0.0.1
 homepage:
@@ -28,10 +28,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.helloinside.time_change_observer
-        pluginClass: TimeChangeObserverPlugin
+        package: com.helloinside.timezone_change_observer
+        pluginClass: TimezoneChangeObserverPlugin
       ios:
-        pluginClass: TimeChangeObserverPlugin
+        pluginClass: TimezoneChangeObserverPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
